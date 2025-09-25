@@ -1,0 +1,31 @@
+import React from "react";
+
+const SellerItems = ({ product }) => {
+  console.log("product", product);
+  return (
+    <div className=" mt-5 col-span-1 border border-gray-300 w-full bg-white p-6">
+      <div className="flex justify-between">
+        <div className=" flex border border-red-500 rounded-3xl text-xs text-[#FF0000] p-2">
+          {product?.offerPercentage}%
+          <p className="text-[#FF0000] ml-1"> installment</p>
+        </div>
+        <div className="p-2">
+          {product?.isFavourite === true
+            ? product?.favorite
+            : product?.favoriteBorder}
+        </div>
+      </div>
+      <div className="mt-4">
+        <img src={product?.image} />
+      </div>
+      <div className="flex text-sm">{product?.name}</div>
+      <div className="flex text-xs">
+        <div className="text-[#FF0000]">${product?.sellingPrice}</div>
+        <div className="ml-3 line-through text-[#99999999]">
+          ${product?.originalPrice}
+        </div>
+      </div>
+    </div>
+  );
+};
+export default SellerItems;

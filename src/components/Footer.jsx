@@ -3,7 +3,7 @@ import form from "../assets/images/form.png";
 
 const Footer = () => {
   return (
-    <div className=" flex justify-evenly items-center w-full h-25 bg-[#4B3EC4]">
+    <div className=" hidden sm:flex justify-evenly items-center w-full h-25 bg-[#4B3EC4]">
       <div className="pl-20 flex items-center text-center">
         <p className="font-bold text-white">Subscribe</p>
         <p className="text-sm ml-1 text-white">&</p>

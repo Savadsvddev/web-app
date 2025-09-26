@@ -32,22 +32,7 @@ const images = [
     img: image,
     name: "Gaming",
   },
-  {
-    id: "7",
-    img: image,
-    name: "Gaming",
-  },
-  {
-    id: "7",
-    img: image,
-    name: "Gaming",
-  },
-  
-  {
-    id: "9",
-    img: image,
-    name: "Gaming",
-  },
+ 
   {
     id: "10",
     img: image,
@@ -61,11 +46,11 @@ const Categories = () => {
         <p className="font-bold">Popular Categories</p>
         <p className="text-xs">View All</p>
       </div>
-      <div className=" flex  ml-4 ">
+      <div className=" grid grid-cols-3 sm:grid-cols-10">
         {images?.map((item) => (
-          <div className=" flex-column ml-4 w-25 h-25 bg-gray-300 rounded-full">
+          <div className="flex-column mb-6 items-center justify-center ml-4 w-25 h-25 bg-gray-300 rounded-full">
             <img src={item?.img} />
-            <p className="text-sm mt-3">{item?.name}</p>
+            <p className="text-sm mt-1 text-center">{item?.name}</p>
           </div>
         ))}
       </div>

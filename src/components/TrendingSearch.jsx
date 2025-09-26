@@ -24,9 +24,9 @@ const TrendingSearch = () => {
   return (
     <div>
       <div className="p-5 font-bold">Trending Search</div>
-      <div className="flex p-5">
+      <div className="grid grid-cols-3 sm:grid-cols-10 gap-2 p-5">
         {searchs?.map((item) => (
-          <div className="flex text-center items-center justify-center w-full h-8 bg-gray-200 rounded-2xl ml-3 text-sm">{item?.name}</div>
+          <div className="flex text-center items-center justify-center w-full h-8 bg-gray-200 rounded-2xl  text-sm">{item?.name}</div>
         ))}
       </div>
     </div>

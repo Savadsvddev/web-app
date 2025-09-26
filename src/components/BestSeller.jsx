@@ -117,14 +117,14 @@ const BestSeller = () => {
         <div className="font-bold">Best Seller</div>
         <div className="text-sm">View All</div>
       </div>
-      <div className="flex">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-1">
         {sellers?.map((item) => (
           <div className="flex text-center items-center justify-center w-30 h-8 bg-white border border-gray-300 rounded-2xl ml-3 text-sm cursor-pointer hover:bg-[#4b3ec4] ">
             {item?.name}
           </div>
         ))}
       </div>
-      <div className="grid grid-cols-4 gap-3 ">
+      <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 ">
         {products?.map((item) => (
           <SellerItems product={item} />
         ))}

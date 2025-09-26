@@ -174,7 +174,7 @@ const WeeklyDeals = () => {
         <div className="flex">
           <p className="font-bold mb-3">Best Weekly Deals</p>
         </div>
-        <div className="grid grid-cols-4 gap-3 ">
+        <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 ">
           {products?.map((item) => (
             <ProductItem product={item} />
           ))}
